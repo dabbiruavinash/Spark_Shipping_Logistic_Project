@@ -1,0 +1,45 @@
+shipping-logistics-pipeline/
+├── main.py
+├── config/
+│   ├── __init__.py
+│   ├── spark_config.py
+│   └── pipeline_config.py
+├── core/
+│   ├── __init__.py
+│   ├── base_processor.py
+│   ├── data_models.py
+│   └── exceptions.py
+├── connectors/
+│   ├── __init__.py
+│   ├── adls_connector.py
+│   ├── databricks_connector.py
+│   └── snowflake_connector.py
+├── processors/
+│   ├── __init__.py
+│   ├── data_ingestion.py
+│   ├── data_validation.py
+│   ├── data_transformation.py
+│   ├── data_enrichment.py
+│   └── data_quality.py
+├── transformations/
+│   ├── __init__.py
+│   ├── shipment_transformer.py
+│   ├── customer_transformer.py
+│   ├── route_transformer.py
+│   └── financial_transformer.py
+├── services/
+│   ├── __init__.py
+│   ├── window_service.py
+│   ├── join_service.py
+│   ├── aggregation_service.py
+│   └── udf_service.py
+├── utils/
+│   ├── __init__.py
+│   ├── spark_utils.py
+│   ├── file_utils.py
+│   ├── date_utils.py
+│   └── validation_utils.py
+└── tests/
+    ├── __init__.py
+    ├── test_transformations.py
+    └── test_services.py
