@@ -1,0 +1,31 @@
+shipping-spark-project/
+├── main.py
+├── config/
+│   ├── __init__.py
+│   ├── spark_config.py
+│   ├── pipeline_config.py
+│   └── metadata_registry.py
+├── core/
+│   ├── __init__.py
+│   ├── base_processor.py
+│   ├── data_models.py
+│   └── exceptions.py
+├── layers/
+│   ├── ingestion/
+│   ├── processing/
+│   ├── enrichment/
+│   ├── business_logic/
+│   ├── storage/
+│   ├── streaming/
+│   ├── financial/
+│   ├── infrastructure/
+│   ├── governance/
+│   └── analytics/
+├── utils/
+│   ├── __init__.py
+│   ├── geospatial_utils.py
+│   ├── date_utils.py
+│   └── validation_utils.py
+└── tests/
+    ├── __init__.py
+    └── test_*.py
